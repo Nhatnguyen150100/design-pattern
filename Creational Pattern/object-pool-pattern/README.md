@@ -1,0 +1,5 @@
+## Object Pool Pattern là một trong những Creational pattern. Nó không nằm trong danh sách các Pattern được giới thiệu bởi GoF. Object Pool Pattern cung cấp một kỹ thuật để tái sử dụng objects thay vì khởi tạo không kiểm soát.
+
+### Design pattern Object Pool trong Java là một giải pháp để quản lý và tái sử dụng các đối tượng tốn kém về tài nguyên hệ thống. Mục đích chính của pattern này là nhằm tối ưu hóa việc sử dụng tài nguyên bằng cách tái sử dụng các đối tượng đã được tạo sẵn thay vì phải tạo mới liên tục
+
+Ý tưởng của Object Pooling là: chúng ta dùng Object Pool Pattern quản lý một tập hợp các objects mà sẽ được tái sử dụng trong chương trình. Khi client cần sử dụng object, thay vì tạo ra một đối tượng mới thì client chỉ cần đơn giản yêu cầu Object pool lấy một đối tượng đã có sẵn trong object pool. Sau khi object được sử dụng nó sẽ không hủy mà sẽ được trả về pool cho client khác sử dụng. Nếu tất cả các object trong pool được sử dụng thì client phải chờ cho tới khi object được trả về pool.
