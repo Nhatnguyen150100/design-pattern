@@ -6,6 +6,7 @@ import org.example.interfaces.ISoldier;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -22,6 +23,9 @@ public class Main {
         System.out.println("Total soldiers made : " + soldiers.size());
         System.out.println("Total time worked : " + Duration.ofMillis(endTime - startTime).getSeconds() + " seconds");
         System.out.println("Total type of soldiers made : " + SoldierFactory.getInstance().getTotalOfSoldiers());
+        for (ISoldier element : soldiers) {
+            System.out.println("address: " + System.identityHashCode(element));
+        }
     }
 
     private static void createSoldier(int numberOfSoldier, String soldierName, int numberOfStar) {
