@@ -4,7 +4,14 @@ import org.example.enums.Color;
 import org.example.factory.CellFactory;
 
 public class Board {
+  /**
+   * Số hàng trong 1 bàn cờ
+   */
   public static final int NO_OF_ROWS = 8;
+
+  /**
+   * Số cột trong 1 bàn cờ
+   */
   public static final int NO_OF_COLUMNS = 8;
 
   private final Cell[][] board;
